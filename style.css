@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(135deg, #5b2cff, #7b4dff);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+header p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+
+/* INTRODUÇÃO */
+
+.introducao {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.introducao h2 {
+    color: #5b2cff;
+    margin-bottom: 10px;
+}
+
+
+/* ÁREAS INTERATIVAS */
+
+details {
+    background-color: white;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+summary {
+    cursor: pointer;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s;
+}
+
+summary:hover {
+    background-color: #f0ecff;
+    color: #5b2cff;
+}
+
+details[open] summary {
+    background-color: #5b2cff;
+    color: white;
+}
+
+
+/* CONTEÚDO QUE APARECE */
+
+.conteudo {
+    padding: 25px;
+    animation: aparecer 0.3s ease;
+}
+
+.conteudo p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* ANIMAÇÃO */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* FLUXO DOS DADOS */
+
+.resultado {
+    background-color: #f0ecff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #4a24c9;
+    margin-top: 20px;
+}
+
+.resultado span {
+    display: block;
+    font-size: 25px;
+    margin: 8px;
+}
+
+
+/* CLASSIFICAÇÃO */
+
+.classificacao {
+    margin-top: 40px;
+}
+
+.classificacao h2 {
+    color: #5b2cff;
+    margin-bottom: 8px;
+}
+
+.instrucao {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+
+/* SISTEMAS */
+
+.sistema {
+    padding: 20px;
+    background-color: #fafafa;
+    border-top: 1px solid #ddd;
+}
+
+.sistema p {
+    margin-bottom: 8px;
+}
+
+.sistema strong {
+    color: #5b2cff;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    summary {
+        font-size: 16px;
+    }
+}
